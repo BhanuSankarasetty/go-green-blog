@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contribute | Go Green</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="src/favicon.ico" type="image/x-icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-sm">
+
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="src/PlanetGreen.logo.png" alt="logo" class="Logo ">
+        <span>Go Green</span>
+      </a>     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="need.html">Need</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contribute.html">Contribute</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="quick-action.html">Quick Action</a></li>
+              <li><a class="dropdown-item" href="spread-awareness.html">Spread Awareness</a></li>
+              <li><a class="dropdown-item" href="happenings.html">Happenings</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  <main class="container mt-5">
+  <section id="contribute" class="container py-5">
+    <h2 class="text-center text-success fw-bold mb-4">Contribute by Spreading Awareness</h2>
+    <p class="text-center text-muted mb-4">
+      You don't have to create content to help — just share these powerful messages with your circle and amplify the green movement 🌱.
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+  
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-success">🌍 Every Choice Counts</h5>
+            <p class="card-text text-muted">
+              Switching off a light, carrying a cloth bag, or planting a tree — small acts, massive impact. Let's go green, one step at a time.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://wa.me/?text=Switching%20off%20a%20light%2C%20carrying%20a%20cloth%20bag%2C%20or%20planting%20a%20tree%20%E2%80%94%20small%20acts%2C%20massive%20impact.%20Let's%20go%20green%20https://Development_2/index.html" target="_blank" class="btn btn-sm btn-outline-success">WhatsApp</a>
+                <a href="https://twitter.com/intent/tweet?text=Switching%20off%20a%20light%2C%20planting%20a%20tree%20%F0%9F%8C%B1%20https://Development_2/index.html" target="_blank" class="btn btn-sm btn-outline-success">Twitter</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://Development_2/index.html" target="_blank" class="btn btn-sm btn-outline-success">Facebook</a>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary" onclick="copyText(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="text-center mt-5">
+      <a href="contact.html" class="btn btn-success btn-lg">Want to Help More?</a>
+    </div>
+  </section>
+
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <a href="#contribute" class="btn btn-success rounded-circle p-3 shadow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-share" viewBox="0 0 16 16">
+        <path d="M13.5 1a1.5 1.5 0 1 1-1.415 1H6.707L9.354 4.646a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 1 1 .708.708L6.707 1H12.085A1.5 1.5 0 0 1 13.5 1z"/>
+      </svg>
+    </a>
+  </div>
+  
+  <script>
+    function copyText(button) {
+      const text = button.parentElement.parentElement.querySelector(".card-text").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
+      });
+    }
+  </script>
+  
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

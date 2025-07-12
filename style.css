@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+.Logo {
+    height: 40px;
+    width: 40px;
+  }
+  .carousel-item {
+    background-color: #000;
+    transition: background-color 0.1s ease !important;
+  }
+  
+  
+  .Background {
+    margin: 0;
+    padding: 0;
+    background-color: #fff #7dc255;
+    color: #000104;
+    background-size: cover;
+  }
+  .carousel{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .carousel-inner {
+    will-change: transform;
+  }
+  
+  .carousel-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Responsive height for smaller devices */
+  @media (max-width: 768px) {
+    .carousel-img {
+      height: 60vh; /* or 300px */
+    }
+  }
+  .carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+  .caption-bg {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  #blog h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #00b15e;
+    margin: 10px auto;
+    border-radius: 3px;
+  }
+  
+  article h3, article h4, article h5 {
+    margin-top: 1.5rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #28a745;
+    padding-left: 1rem;
+  }
+  footer a:hover {
+    color: #4ade80 !important; 
+    transition: 0.3s;
+  }
+  
+  
+  
+  
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #d4edda;
+  }
+  

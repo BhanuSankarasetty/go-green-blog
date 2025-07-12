@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spread Awareness | Go Green</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="src/favicon.ico" type="image/x-icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-sm">
+
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="src/PlanetGreen.logo.png" alt="logo" class="Logo ">
+        <span>Go Green</span>
+      </a>     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="need.html">Need</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contribute.html">Contribute</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="quick-action.html">Quick Action</a></li>
+              <li><a class="dropdown-item" href="spread-awareness.html">Spread Awareness</a></li>
+              <li><a class="dropdown-item" href="happenings.html">Happenings</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <main class="container mt-5">
+
+    <section id="spreadawareness" class="container py-5">
+    <h2 class="text-center text-success fw-bold mb-4">Spread Awareness 🌍</h2>
+    <p class="text-center text-muted mb-5">
+      Knowledge shared is change multiplied. Help amplify the green message — your voice matters.
+    </p>
+  
+    <div class="row g-4">
+      <!-- Shareable Post 1 -->
+      <div class="col-md-4">
+        <div class="card border-success shadow-sm h-100">
+          <img src="src/Plantingtrees.webp" class="card-img-top" alt="Plant trees poster">
+          <div class="card-body">
+            <h5 class="card-title text-success">Plant More Trees</h5>
+            <p class="card-text text-muted">Download and share this visual to promote tree planting and reforestation.</p>
+            <div class="d-flex justify-content-between">
+              <a href="src/Plantingtrees.webp" download class="btn btn-outline-success btn-sm">Download</a>
+              <button class="btn btn-success btn-sm" onclick="sharePost('Plant More Trees')">Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Shareable Post 2 -->
+      <div class="col-md-4">
+        <div class="card border-success shadow-sm h-100">
+          <img src="src/nomoreplastic.jpg" class="card-img-top" alt="Say No to Plastic">
+          <div class="card-body">
+            <h5 class="card-title text-success">Say No to Plastic</h5>
+            <p class="card-text text-muted">Encourage friends to ditch plastic and embrace sustainability.</p>
+            <div class="d-flex justify-content-between">
+              <a href="src/nomoreplastic.jpg" download class="btn btn-outline-success btn-sm">Download</a>
+              <button class="btn btn-success btn-sm" onclick="sharePost('Say No to Plastic')">Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Shareable Post 3 -->
+      <div class="col-md-4">
+        <div class="card border-success shadow-sm h-100">
+          <img src="src/savewater.jpg" class="card-img-top" alt="Conserve Water">
+          <div class="card-body">
+            <h5 class="card-title text-success">Conserve Water</h5>
+            <p class="card-text text-muted">Water is life — inspire others to save every drop with this message.</p>
+            <div class="d-flex justify-content-between">
+              <a href="src/savewater.jpg" download class="btn btn-outline-success btn-sm">Download</a>
+              <button class="btn btn-success btn-sm" onclick="sharePost('Conserve Water')">Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Optional Custom Message -->
+    <div class="text-center mt-5">
+      <h5 class="text-success">Want to create your own awareness poster?</h5>
+      <p class="text-muted">Submit your ideas or artwork and we’ll feature them here.</p>
+      <a href="#contribute" class="btn btn-outline-success">Submit Your Post</a>
+    </div>
+    </section>
+  
+    </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

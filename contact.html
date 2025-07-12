@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Go Green</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="src/favicon.ico" type="image/x-icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-sm">
+
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="src/PlanetGreen.logo.png" alt="logo" class="Logo ">
+        <span>Go Green</span>
+      </a>     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="need.html">Need</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contribute.html">Contribute</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="quick-action.html">Quick Action</a></li>
+              <li><a class="dropdown-item" href="spread-awareness.html">Spread Awareness</a></li>
+              <li><a class="dropdown-item" href="happenings.html">Happenings</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+<main class="container py-5 mt-5" id="contact">
+    <form class="bg-white p-4 shadow rounded">
+        <div class="mb-3">
+          <label for="name" class="form-label text-success">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="email" class="form-label text-success">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="your@example.com" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="message" class="form-label text-success">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label text-success">Would you like to contribute to our website?</label>
+          <select class="form-select" id="contribute-option" required>
+            <option value="">-- Select an option --</option>
+            <option value="yes">Yes, I want to contribute!</option>
+            <option value="no">No, just contacting for now.</option>
+          </select>
+        </div>
+
+        <div class="mb-3" id="contribution-details" style="display: none;">
+          <label for="contributionType" class="form-label text-success">Tell us how you’d like to contribute (writing blogs, designs, etc.)</label>
+          <input type="text" class="form-control" id="contributionType" placeholder="e.g., Content writing, UI design, Promotion">
+        </div>
+      
+        <div class="text-center">
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </div>
+      </form>
+      
+  </main>
+  
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
